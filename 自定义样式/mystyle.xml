@@ -1,0 +1,11 @@
+<resources>
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	<item name="android:textSize">30dip</item>
+        <item name="android:textColor">#990033</item>
+    </style>		
+    <style name="MyTheme">
+	<item name="android:background">#D9D9D9</item>
+    </style>
+</resources>
