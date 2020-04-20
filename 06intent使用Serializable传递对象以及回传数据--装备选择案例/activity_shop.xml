@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:text="商品名称"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+         <TextView
+             android:id="@+id/tv_life"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:text="生命值"/>
+         <TextView
+             android:id="@+id/tv_attack"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:text="攻击力"/>
+         <TextView
+             android:id="@+id/tv_speed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:text="速度"/>
+        </LinearLayout>
+</RelativeLayout>
