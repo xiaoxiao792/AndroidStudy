@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/person_layout" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/person_RelativeLayout01">
+        <TextView
+            android:layout_alignBaseline="@+id/person_idEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生ID:"
+            android:id="@+id/person_idText" />
+
+        <EditText
+            android:layout_alignParentRight="true"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_idEdit"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_below="@+id/person_idText"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/person_nameEdit"
+            android:text="姓    名:"
+            android:id="@+id/person_nameText"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_below="@+id/person_idEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/person_nameEdit"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_below="@+id/person_nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/person_classEdit"
+            android:text="班    级:"
+            android:id="@+id/person_classText" />
+
+        <EditText
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/person_nameEdit"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/person_classEdit"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_below="@+id/person_classEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_LinearLayout01">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加数据"
+                android:id="@+id/person_btn_dataAdd" />
+
+            <Button
+                android:padding="3px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部删除"
+                android:id="@+id/person_btn_dataDeleteAll" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/person_LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/person_LinearLayout02">
+
+            <TextView android:text="学生ID："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding = "3dp" />
+
+            <EditText android:id="@+id/person_ID_entry"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding = "3dp" />
+            <Button android:id="@+id/person_ID_delete"
+                android:text="ID删除"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding = "3dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:padding="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据显示"
+            android:id="@+id/person_lable">
+        </TextView>
+        <ScrollView
+            android:layout_below="@+id/person_lable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person_display">
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
