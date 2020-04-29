@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical" >  <!-- 定义一个线性布局样式 -->
+<TextView 
+	android:id="@+id/username_view"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:layout_marginLeft="20dip"
+	android:layout_marginRight="20dip"
+	android:text="用户名"
+	android:gravity="left"/>  <!-- 定义“用户名”，定义其id、高、宽、位置、显示文字-->
+<EditText
+	android:id="@+id/username_edit"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_marginLeft="20dip"
+	android:layout_marginRight="20dip"
+	android:scrollHorizontally="true"
+	android:autoText="false"
+	android:capitalize="none"
+	android:gravity="fill_horizontal"
+	android:textAppearance="?android:attr/textAppearanceMedium" /> <!-- 对应用户名的输入框 -->
+<TextView
+	android:id="@+id/password_view"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:layout_marginLeft="20dip"
+	android:layout_marginRight="20dip"
+	android:text="密码"
+	android:gravity="left"/> <!-- 定义“密码”，定义其id、高、宽、位置、显示文字-->
+<EditText
+	android:id="@+id/password_edit"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_marginLeft="20dip"
+	android:layout_marginRight="20dip"
+	android:scrollHorizontally="true"
+	android:autoText="false"
+	android:capitalize="none"
+	android:gravity="fill_horizontal"
+	android:password="true" />  <!-- 对应“密码”的输入框，android:password 为显示* -->
+</LinearLayout>

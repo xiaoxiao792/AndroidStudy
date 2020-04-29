@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">常见对话框使用示例</string>
+    <string name="app_name">各种常见对话框使用示例</string>
+    <string name="btn1">显示普通对话框</string>
+    <string name="btn2">显示列表对话框</string>
+    <string name="btn3">显示单选对话框</string>
+    <string name="title1">普通对话框</string>	
+    <string name="title2">列表对话框</string>	
+    <string name="title3">单选对话框</string>	
+    <string name="ok">确定</string><!-- 用于在单选对话框下面添加确定按钮的显示文字 -->
+    <string name="cancel">退出</string><!-- 用于在单选对话框下面添加退出按钮的显示文字 -->
+    
+</resources>
