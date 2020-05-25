@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ac_login_role_spn">
+        <item>学生</item>
+        <item>教师</item>
+    </string-array>
+</resources>

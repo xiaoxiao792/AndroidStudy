@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">StudyManagementSystem</string>
+
+    <string name="ac_login_role">角色：</string>
+    <string name="ac_login_user_id">学号：</string>
+    <string name="ac_login_user_pwd">密码：</string>
+    <string name="ac_login_user_id_stips">请输入你的学号</string>
+    <string name="ac_login_user_id_ttips">请输入你的教工号</string>
+    <string name="ac_login_user_pwd_tips">请输入你的密码</string>
+    <string name="ac_login_register">注册</string>
+    <string name="ac_login_btn">登录</string>
+
+    <string name="ac_register_user_id">学  号：</string>
+    <string name="ac_register_user_id02">工  号：</string>
+    <string name="ac_register_user_card_id">身份证:</string>
+    <string name="ac_register_role">角  色：</string>
+    <string name="ac_register_college">学  校：</string>
+    <string name="ac_register_department">院  系：</string>
+    <string name="ac_register_admission_time">入学日期:</string>
+    <string name="ac_register_phone">手  机：</string>
+    <string name="ac_register_email">邮  箱：</string>
+    <string name="ac_register_major">专  业：</string>
+    <string name="ac_register_grade">年  级：</string>
+    <string name="ac_register_classes">班  级：</string>
+    <string name="ac_register_password">密  码：</string>
+    <string name="ac_register_user_name">姓  名：</string>
+    <string name="ac_register_sex">性  别：</string>
+    <string name="ac_register_user_id_stips">请输入你的学号</string>
+    <string name="ac_register_user_card_id_stips">请输入你的身份证</string>
+    <string name="ac_register_user_name_stips">请输入你的姓名</string>
+    <string name="ac_register_department_stips">请输入你的院系</string>
+    <string name="ac_register_phone_stips">请输入你的手机</string>
+    <string name="ac_register_email_stips">请输入你的邮箱</string>
+    <string name="ac_register_major_stips">请输入你的专业</string>
+    <string name="ac_register_grade_stips">请输入你的年级</string>
+    <string name="ac_register_classes_stips">请输入你的班级</string>
+    <string name="ac_register_password_stips">请输入你的密码</string>
+    <string name="ac_register_vpassword_stips">请再一次输入你的密码</string>
+    <string name="ac_register_male">男</string>
+    <string name="ac_register_female">女</string>
+    <string name="ac_register_college_text">仲恺农业工程学院</string>
+    <string name="ac_register_admission_time_text">2020-9-1</string>
+    <string name="ac_register_btn">注册</string>
+
+    <string name="ac_mian_updata_password_btn">修改密码</string>
+    <string name="ac_up_pwd_oldpassword">旧密码：</string>
+    <string name="ac_up_pwd_newpassword">新密码：</string>
+    <string name="ac_up_pwd_oldpassword_stips">请输入你的旧密码</string>
+    <string name="ac_up_pwd_newpassword_stips">请输入你的新密码</string>
+    <string name="ac_up_pwd_btn">确认修改</string>
+</resources>

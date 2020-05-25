@@ -1,0 +1,418 @@
+<?xml version="2.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_ac_register_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_ac_register_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_ac_register_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_user_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_user_id"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_user_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_user_id_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_role"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_role"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_role"
+                style="@style/ac_register_main_tv"/>
+
+            <Spinner
+                android:id="@+id/spn_ac_register_role"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:entries="@array/ac_login_role_spn"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_user_name"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_user_name_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_sex"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_sex"
+                style="@style/ac_register_main_tv"/>
+
+            <RadioGroup
+                android:id="@+id/rg_ac_register_sex"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp">
+
+                <RadioButton
+                    android:id="@+id/rb_ac_register_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="@string/ac_register_male" />
+
+                <RadioButton
+                    android:id="@+id/rb_ac_register_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/ac_register_female" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_user_card_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_user_card_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_user_card_id"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_user_card_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_user_card_id_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_college"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_college"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_college"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_college"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:text="@string/ac_register_college_text"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_department"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_department"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_department"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_department_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_admission_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_admission_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_admission_time"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_admission_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="datetime"
+                android:text="@string/ac_register_admission_time_text"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_phone"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="phone"
+                android:hint="@string/ac_register_phone_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_email"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="textEmailAddress"
+                android:hint="@string/ac_register_email_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_major"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_major"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_major"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_major"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_major_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_grade"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_grade"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_grade_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_classes"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_classes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_classes"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_classes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="text"
+                android:hint="@string/ac_register_classes_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_password"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="textPassword"
+                android:hint="@string/ac_register_password_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_ac_register_vpassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ac_register_vpassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ac_register_password"
+                style="@style/ac_register_main_tv"/>
+
+            <EditText
+                android:id="@+id/et_ac_register_vpassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:inputType="textPassword"
+                android:hint="@string/ac_register_vpassword_stips"
+                style="@style/ac_register_main_et"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_ac_register_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ac_register_btn"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
