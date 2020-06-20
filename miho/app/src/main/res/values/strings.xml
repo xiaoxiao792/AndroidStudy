@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Miho</string>
+    <!--ac_login-->
+    <string name="str_login_title">Miho</string>
+    <string name="str_login_tip">用户名/邮箱登录</string>
+    <string name="tv_login_user_name">账户</string>
+    <string name="tv_login_password">密码</string>
+    <string name="tv_login_register">注册新用户</string>
+    <string name="et_login_user_name">请输入用户名/邮箱</string>
+    <string name="et_login_password">请输入密码</string>
+    <string name="btn_login_login">登录</string>
+    <string name="tv_login_retrieve">找回密码</string>
+    <!--ac_register-->
+    <string name="str_register_title">Miho</string>
+    <string name="str_register_tip">用户注册</string>
+    <string name="tv_register_user_name">用户</string>
+    <string name="et_register_user_name">请输入用户名</string>
+    <string name="btn_register_register">注册</string>
+    <string name="tv_register_password">密码</string>
+    <string name="et_register_password">请输入密码</string>
+    <string name="tv_register_register">注册即同意小迷糊用户协议</string>
+    <!--ac_main-->
+    <string name="str_main_title">Miho</string>
+    <string name="str_main_subtitle">今日任务进度：0%</string>
+</resources>

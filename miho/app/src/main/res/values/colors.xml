@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#31C192</color>
+    <color name="myBlack">#000000</color>
+    <color name="myWhite">#FFFFFF</color>
+    <color name="myRed">#F44336</color>
+    <color name="myYellow">#FFEB3B</color>
+    <color name="myGray">#AAAAAA</color>
+    <color name="myToolbarColor">#31C192</color>
+
+</resources>

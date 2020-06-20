@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuView">
+        <!-- format="reference"意为参考某一资源ID -->
+        <attr name="content_id" format="reference"/>
+        <attr name="right_id" format="reference" />
+    </declare-styleable>
+
+</resources>

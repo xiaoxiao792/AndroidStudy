@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--顶部的需要沉浸的图片View 或其他东西 视频View  等 -->
+    <!--android:background=""中放入对应图片-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/cat" />
+
+    <!--app:use_type="use_padding_top 向上paddingTop状态栏高度-->
+    <com.shaobing.miho.Views.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:use_type="use_padding_top">
+
+        <!--放入内容，此view为LinearLayout-->
+
+
+    </com.shaobing.miho.Views.StatusBarHeightView>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/myToolbarColor">
+
+    <Toolbar
+        android:id="@+id/tbr_main_tbr"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/myToolbarColor"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_main_title"
+                    android:textColor="@color/myWhite"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/tv_main_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_tv_progress"
+                    android:text="@string/str_main_subtitle"
+                    android:textColor="@color/myWhite"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="2dp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:background="@mipmap/menu" />
+
+            <ImageView
+                android:id="@+id/img_main_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="52dp"
+                android:background="@mipmap/music_pause" />
+        </RelativeLayout>
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbr_main_tbr"
+        android:background="@mipmap/bg">
+
+        <com.shaobing.miho.Views.SwipeRecycleView
+            android:id="@+id/swipe_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            fab:fab_colorNormal="@color/myToolbarColor"
+            fab:fab_icon="@mipmap/statistics_icon" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fbm_nain_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            fab:fab_addButtonPlusIconColor="@color/myWhite"
+            fab:fab_addButtonColorNormal="@color/myToolbarColor">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_main_fb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#00BCD4"
+                fab:fab_icon="@mipmap/xuexi"
+                fab:fab_size="normal" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_main_fb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#FFC107"
+                fab:fab_icon="@mipmap/xuexi"
+                fab:fab_size="normal"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_main_fb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#00C853"
+                fab:fab_icon="@mipmap/xuexi"
+                fab:fab_size="normal"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_main_fb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#F06292"
+                fab:fab_icon="@mipmap/xuexi"
+                fab:fab_size="normal"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_main_fb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#FF6D00"
+                fab:fab_icon="@mipmap/xuexi"
+                fab:fab_size="normal"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </RelativeLayout>
+
+</RelativeLayout>

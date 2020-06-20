@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_add_plan"
+        android:elevation="4dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_add_plan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFC107"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            fab:fab_icon="@mipmap/xuexi"
+            fab:fab_size="normal"/>
+
+        <EditText
+            android:id="@+id/et_add_plan_name"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:hint="给任务命名"
+            android:gravity="center"
+            android:background="@drawable/shape_et_name"/>
+
+        <RadioGroup
+            android:id="@+id/rg_add_plan_time_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="190dp">
+
+            <RadioButton
+                android:id="@+id/rb_add_plan_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="每天" />
+
+            <RadioButton
+                android:id="@+id/rb_add_plan_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作日" />
+
+            <RadioButton
+                android:id="@+id/rb_add_plan_rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双休日"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_add_plan_add"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:text="添  加"
+            android:textSize="16sp"
+            android:textColor="@color/myWhite"
+            android:background="@drawable/shape_btn_add"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
