@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.shaobing.runner"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file("/Users/shaowenbing/Documents/swb.keystore")
+            storePassword "123456"
+            keyAlias "swbrunner"
+            keyPassword "123456"
+        }
+        debug {
+            storeFile file("/Users/shaowenbing/Documents/swb.keystore")
+            storePassword "123456"
+            keyAlias "swbrunner"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation files('libs/mysql-connector-java-5.1.48-bin.jar')
+    implementation 'com.github.SheHuan:NiceImageView:1.0.5'
+//    implementation (name:'AliyunPlayer-4.5.0-full',ext:'aar')
+//    implementation 'com.alivc.conan:AlivcConan:0.9.5'
+}
+
+MobSDK {
+    appKey "2fbd48ad84b7f"
+    appSecret "728e4009072bf2a89eecdefbe4275963"
+    SMSSDK {
+        //autoSMS true
+    }
+}

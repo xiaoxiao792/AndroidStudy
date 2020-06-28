@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#31C192</color>
+    <color name="myBlack">#000000</color>
+    <color name="myWhite">#FFFFFF</color>
+    <color name="myRed">#F44336</color>
+    <color name="myYellow">#FFEB3B</color>
+    <color name="myGray">#AAAAAA</color>
+    <color name="myToolbarColor">#31C192</color>
+
+    <color name="smssdk_green">#08979C</color>
+    <color name="smssdk_white_line">#14ffffff</color>
+    <color name="smssdk_hint_textcolor">#7fffffff</color>
+    <color name="smssdk_text_green">#099A9F</color>
+
+    <color name="transparent">#0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="color_efefef">#efefef</color>
+    <color name="bg_video_controller">#A6000000</color>
+    <color name="bg_video_controller_divider">#FDFDFD</color>
+
+</resources>

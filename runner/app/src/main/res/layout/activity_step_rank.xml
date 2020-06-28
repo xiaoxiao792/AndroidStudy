@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runner步数榜"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!--线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="42dp"
+        android:background="#cdcdcd">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ac_step_rank_ranknum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp">
+            <com.shehuan.niv.NiceImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="6dp"
+                android:src="@mipmap/icontest02"
+                app:is_circle="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ac_step_rank_username"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"
+                android:textColor="#31C192"/>
+            <TextView
+                android:id="@+id/ac_step_rank_stepnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_centerVertical="true"
+                android:textSize="26sp"
+                android:textColor="#31C192"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="100dp"
+        android:background="#cdcdcd">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="104dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/step_rank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

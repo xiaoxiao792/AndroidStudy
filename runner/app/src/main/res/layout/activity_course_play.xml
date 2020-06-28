@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.shaobing.runner.View.BDVideoView
+            android:id="@+id/vv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#888">
+
+        </com.shaobing.runner.View.BDVideoView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/course_play_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程名称"
+        android:textSize="28sp"
+        android:layout_margin="12dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp">
+
+        <TextView
+            android:id="@+id/course_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:text="10分钟"/>
+
+        <TextView
+            android:id="@+id/course_play_sub_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="106678人在学"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/course_play_course_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"
+        android:text="课程描述"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/btn_sub_course"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:text="加入课程"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#31C192"/>
+    </RelativeLayout>
+
+</LinearLayout>

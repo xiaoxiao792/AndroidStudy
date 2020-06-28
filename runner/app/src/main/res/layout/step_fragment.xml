@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/tbr_step_tbr"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Runner"
+                android:textColor="#000000"
+                android:textStyle="normal"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/step_frag_history"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@mipmap/lishihistory2" />
+
+            <ImageView
+                android:id="@+id/step_frag_music"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/selector_yinle_icon" />
+        </RelativeLayout>
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/paihangbang_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shape_paihangbang"
+        android:layout_alignTop="@+id/tbr_step_tbr"
+        android:layout_marginTop="48dp">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            android:background="@mipmap/paihangbang" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="排行榜"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/xiangyou" />
+
+    </LinearLayout>
+
+    <com.shaobing.runner.View.CircularProgressView
+        android:id="@+id/cir_step"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:padding="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/tbr_step_tbr"
+        android:layout_marginTop="66dp"
+        app:backColor="#ebebeb"
+        app:backWidth="16dp"
+        app:progColor="@color/colorAccent"
+        app:progWidth="16dp"
+        app:progress="65" />
+
+    <TextView
+        android:id="@+id/busu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cir_step"
+        android:text="82"
+        android:textSize="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_step_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cir_step"
+        android:text="目标步数：500步"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textStyle="normal"
+        android:textColor="#716C6C"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/cir_step"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_tuijian"
+        android:elevation="4dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="@mipmap/hongbao" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新人福利"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="走路捐步数，还能领取红包哦！"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_tuijian"
+        android:layout_alignTop="@+id/cir_step"
+        android:layout_marginTop="390dp"
+        android:orientation="horizontal"
+        android:elevation="4dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="@mipmap/tiyu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="使用课程锻炼效果更好哦！"
+                android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
